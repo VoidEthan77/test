@@ -1,0 +1,60 @@
+---- Minecraft Crash Report ----
+// I blame Dinnerbone.
+
+Time: 2024-07-07 11:36:48
+Description: Exception in server tick loop
+
+java.net.UnknownHostException: 1life.smp.com: Name or service not known
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:934)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1543)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:852)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1385)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1306)
+	at java.base/java.net.InetAddress.getByName(InetAddress.java:1256)
+	at ajn.e(SourceFile:129)
+	at net.minecraft.server.MinecraftServer.w(SourceFile:642)
+	at net.minecraft.server.MinecraftServer.a(SourceFile:263)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.20.2
+	Minecraft Version ID: 1.20.2
+	Operating System: Linux (amd64) version 5.15.0-92-generic
+	Java Version: 17.0.11, Ubuntu
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Ubuntu
+	Memory: 776820248 bytes (740 MiB) / 1037959168 bytes (989 MiB) up to 1037959168 bytes (989 MiB)
+	CPUs: 1
+	Processor Vendor: GenuineIntel
+	Processor Name: Intel Core Processor (Haswell, no TSX)
+	Identifier: Intel64 Family 6 Model 60 Stepping 1
+	Microarchitecture: Haswell (Client)
+	Frequency (GHz): 2.00
+	Number of physical packages: 1
+	Number of physical CPUs: 1
+	Number of logical CPUs: 1
+	Graphics card #0 name: GD 5446
+	Graphics card #0 vendor: Cirrus Logic (0x1013)
+	Graphics card #0 VRAM (MB): 32.00
+	Graphics card #0 deviceId: 0x00b8
+	Graphics card #0 versionInfo: unknown
+	Memory slot #0 capacity (MB): 2000.00
+	Memory slot #0 clockSpeed (GHz): -0.00
+	Memory slot #0 type: RAM
+	Virtual memory max (MB): 958.01
+	Virtual memory used (MB): 1388.01
+	Swap memory total (MB): 0.00
+	Swap memory used (MB): 0.00
+	JVM Flags: 2 total; -Xms1G -Xmx1G
+	Server Running: true
+	Data Packs: vanilla
+	Enabled Feature Flags: minecraft:vanilla
+	World Generation: Stable
+	Is Modded: Probably not. Server jar signature and brand is untouched
+	Type: Dedicated Server (map_server.txt)
